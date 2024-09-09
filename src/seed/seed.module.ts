@@ -5,6 +5,7 @@ import { PokemonModule } from 'src/pokemon/pokemon.module';
 
 @Module({
   controllers: [SeedController],
-  providers: [SeedService]
+  providers: [SeedService],
+  imports: [PokemonModule]
 })
 export class SeedModule {}
